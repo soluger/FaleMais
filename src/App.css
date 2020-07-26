@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+.form-control{
+  height: 60px;
+}
+.btn-dark{
+  height: 60px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.result{
+  font-size: 24px;
+}
+.result span{
+  font-size: 30px;
+  font-weight: 600;
+  color: green;
+}
+.lead{
+  font-size: 25px;
+}
+/* CSS NAVBAR */
+.navbar{
+  height: 120px;
+  border-bottom: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.3);
+}
+.nav-icon{
+  font-size: 50px;
+}
+.navbar-brand{
+  padding-top: 50px;
+  font-size: 40px;
+}
+.navbar-brand span{
+  color: #dc3545;
+}
+.form-inline{
+  padding-top: 44px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* CSS HENING */
+.hening{
+  padding-top: 200px;
+  min-height: 70vh;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.msg-erro{
+  color: #ff4d4d;
+  font-size: 24px;
 }
