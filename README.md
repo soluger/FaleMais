@@ -1,7 +1,7 @@
     Este projeto foi criado com Create-React-App.
 
-    Para clonar o repositório: 
-        git
+    Para clonar o repositório via https: 
+        https://github.com/soluger/FaleMais.git
 
     Instalar as dependências: 
         npm install
@@ -10,6 +10,9 @@
         npm start
 
     Realização de teste
+        npm test
+    
+    
 
 
         
