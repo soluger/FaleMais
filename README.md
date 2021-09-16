@@ -1,4 +1,4 @@
-    Este projeto foi criado com Create-React-App.
+    Esta aplicação foi desenvolvida em react js sua funcionalidade principal é calcular o preço de uma ligação com base nos planos de uma empresa. 
 
     Para clonar o repositório via https: 
         https://github.com/soluger/FaleMais.git
