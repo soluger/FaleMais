@@ -116,25 +116,37 @@ const FaleMais = () => {
                 </select>
             </div>                   
         </div>        
-        <div className="nav justify-content-end">
-            <button
-                data-testid="form-btn"   
-                onClick={calcular}
-                type="button" className="btn btn-dark">Calcular valor</button> 
-        </div>
-        <p className="msg-erro">{msg}</p>
-        {valor > 0 &&       
-            <div className="row mt-5" >            
-                <div className="col-md-6">                
-                    <p className="result">Custo com o <strong>FaleMais {plano}</strong></p>
-                    <p className="result mt-4">Custo sem plano:</p>               
-                </div>
-                <div className="col-md-6" data-testid="list-result">
-                    <p className="result"><span>$ {valorComPlano}</span></p>
-                    <p className="result">$ {valor}</p>
-                </div>
+        <div className="container">
+          <div className="row" style={{justifyContent: 'space-between', alignItems: 'center'}}>
+            <>
+                <p className="msg-erro">{msg}</p>
+                {valor > 0 ?     
+                    <div className="row mt-3" >            
+                        <div className="col-md-6">                
+                            <p className="result">Custo com o <strong>FaleMais {plano}</strong></p>
+                            <p className="result mt-4">Custo sem plano:</p>               
+                        </div>
+                        <div className="col-md-6" data-testid="list-result">
+                            <p className="result"><span>$ {valorComPlano}</span></p>
+                            <p className="result mt-4">$ {valor}</p>
+                        </div>
+                    </div>
+                    :
+                    <p className="aviso">Ensira os dados para calcular!</p>
+                }
+            </>
+
+            <div className="nav justify-content-end">
+                <button
+                    data-testid="form-btn"   
+                    onClick={calcular}
+                    type="button" className="btn btn-dark"
+                >
+                    Calcular valor
+                </button> 
             </div>
-        }
+            </div>  
+        </div>
         </>                        
     )
 }
